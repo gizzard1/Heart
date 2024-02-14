@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" href="chuchis.jpg">
+    <title>David & Ale</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('.heartButton2').click(function(){
+                arriba = Math.random()*(300-1) +1;
+                abajo = Math.random() * (300-1) +1;
+              $(this).css('top', arriba);
+              $(this).css('left', abajo);
+            });
+        });</script>
+    <p class="reload">Regresa</p>
+    <div class="content">
+
+    <div class="heart">
+        
+        <p class="title">Haz click</p>
+        <p class="message" id="mensaje">Mi amor...<br>
+    Estuve preparando esto para ti<br>
+    porque me haces sentir inmensamente feliz y seguro. <br>
+            Probablemente hoy no nos veamos, pero en cuanto te mire</br>
+        mis ganas de abrazarte se dispararan <br> 
+        <br> Acepta ser mi novia y te doy mil besos :3</p>
+        
+        
+    </div>
+    <div class ="heart anime"></div>
+    <div class="hearts">
+        <div class="heart2"></div>
+        <div class="heart3"></div>
+        <div class="heart4"></div>
+        
+    <div class="heartButton heartButtonLeft"  onclick="cambiarTexto()">
+        <p class="title">Sí</p>
+        </div>
+        <div class="heartButton2 heartButtonRight">
+        <p class="title">No</p>
+        </div>
+    </div>
+
+    </div>
+</body>
+<script src="valentineDay.js"></script>
+</html>
